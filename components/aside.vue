@@ -9,7 +9,7 @@
         </div>
         <div class="h-1/3">
             <ul>
-                <li class="text-[25px] leading-[35px] text-white font-light hover:underline"
+                <li class="text-[25px] leading-[40px] text-white font-light hover:underline"
                     v-for="(item, index) in links" :key="index">
                     <a :href="item.link">{{ item.name }}</a>
                 </li>
@@ -17,7 +17,7 @@
         </div>
         <div class="h-1/3">
             <ul>
-                <li class="text-[25px] leading-[35px] text-white font-light" v-for="(item, index) in footer">
+                <li class="text-[25px] leading-[40px] text-white font-light" v-for="(item, index) in footer">
                     {{ item }}
                 </li>
             </ul>
@@ -31,19 +31,19 @@ export default {
         return {
             links: [
                 {
-                    link: "#",
+                    link: "https://github.com/Asam237",
                     name: "Github"
                 },
                 {
-                    link: "#",
+                    link: "https://www.linkedin.com/in/abba-sali-aboubakar-mamate",
                     name: "LinkedIn"
                 },
                 {
-                    link: "#",
+                    link: "https://twitter.com/asam_237",
                     name: "Twitter"
                 },
                 {
-                    link: "#",
+                    link: "https://www.instagram.com/as4m237__",
                     name: "Instagram"
                 },
             ],
