@@ -34,10 +34,10 @@ module.exports = {
           marginLeft: "auto",
           marginRight: "auto",
           "@screen sm": {
-            maxWidth: "70vw",
+            maxWidth: "75vw",
           },
           "@screen xl": {
-            maxWidth: "980px",
+            maxWidth: "1080px",
           },
         },
       });
