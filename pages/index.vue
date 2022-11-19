@@ -3,7 +3,7 @@
     <div class="flex">
       <div class="hidden md:flex h-screen">
         <div class="w-20 pt-16 pl-16">
-          A
+          <CAside />
         </div>
       </div>
       <div>
@@ -18,7 +18,11 @@
 </template>
 
 <script>
+import CAside from '~/components/aside.vue'
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components: {
+    CAside
+  }
 }
 </script>
