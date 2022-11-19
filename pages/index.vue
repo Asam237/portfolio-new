@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-primary">
+  <div class="bg-primary h-screen w-screen">
     <div class="flex">
-      <div class="hidden md:flex h-screen">
-        <div class="w-20 pt-16 pl-16">
+      <div class="hidden md:flex h-screen w-1/4">
+        <div class="pt-16 pl-16">
           <CAside />
         </div>
       </div>
