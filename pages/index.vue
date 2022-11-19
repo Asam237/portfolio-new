@@ -40,8 +40,7 @@
               class="text-[16px] md:text-[20px] leading-[10px] md:leading-[20px] text-white font-light text-center pt-4">
               inspired by <a href="https://www.mystroken.com/" class="font-bold">Mystro ken</a>
             </p>
-            <p
-              class="text-[16px] md:text-[20px] pt-4 leading-[20px] text-white font-light pb-8 md:pb-12 text-center">
+            <p class="text-[16px] md:text-[20px] pt-4 leading-[20px] text-white font-light pb-8 md:pb-12 text-center">
               Copyright &copy; {{ new Date().getFullYear() }} Abba Sali, All rights reserved.
             </p>
           </footer>
@@ -55,6 +54,11 @@
 import CAside from '~/components/aside.vue'
 export default {
   name: 'IndexPage',
+  head() {
+    return {
+      title: 'Abba Sali — Software developer & UI/UX designer'
+    }
+  },
   data() {
     return {
       projects: [
