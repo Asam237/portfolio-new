@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col justify-between h-screen">
+    <div class="flex flex-col h-[92vh]">
         <div class="h-1/3">
             <h4 class="font-bold text-[25px] text-white hover:underline">
                 <a href="/">
