@@ -63,7 +63,7 @@
             <ul class="py-8 md:py-18">
               <div class="flex">
                 <li v-for="(item, index) in skills" :key="index" class="font-bold text-white mb-8">
-                  <img :src=item class="w-10 h-10 mr-3 sm:mr-6 transform transition duration-500 hover:scale-125"
+                  <img :src=item class="w-6 h-6 sm:w-12 sm:h-12 mr-4 sm:mr-6 md:mr-8 transform transition duration-500 hover:scale-125"
                     alt="" />
                 </li>
               </div>
@@ -128,12 +128,16 @@ export default {
         ' Cross Functional Teams',
       ],
       skills: [
-        require('../assets/imgs/nodejs.png'),
         require('../assets/imgs/script-java.png'),
+        require('../assets/imgs/typescript.png'),
+        require('../assets/imgs/react.png'),
+        require('../assets/imgs/docker.png'),
         require('../assets/imgs/coding.png'),
         require('../assets/imgs/api.png'),
+        require('../assets/imgs/linux.png'),
         require('../assets/imgs/github.png'),
         require('../assets/imgs/mobile-app.png'),
+        require('../assets/imgs/open.png'),
       ],
       educations: [
         {
@@ -206,12 +210,12 @@ export default {
           name: "Flutter Reservation App"
         },
         {
-          link: "https://github.com/Asam237/alert_eneo_mobile",
-          name: "Alerte ENEO Mobile"
+          link: "https://github.com/Asam237/hendou-app",
+          name: "Heendou App"
         },
         {
-          link: "https://github.com/Asam237/send_money_ui",
-          name: "Clone Send Money UI"
+          link: "https://github.com/Asam237/Electronic-shop",
+          name: "Electronic Shop API"
         },
       ]
     }
