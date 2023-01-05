@@ -12,26 +12,33 @@
             Passionate<br />Software<br />
             engineer</h1>
           <div class="mt-20 sm:32 md:mt-44">
+            <div class="site__about pb-20 md:pb-44">
+              <p class="text-lg sm:text-xl text-white font-light">
+                ABOUT
+              </p>
+              <hr class="h-1 text-white mt-2 sm:mt-6" />
+              <p
+                class="text-xl md:text-5xl font-extralight text-gray-100 leading-[35px] md:leading-[70px] py-4 sm:py-8 md:py-14">
+                Hi, I'm Abba Sali.<br />
+                A software developer & UI/UX designer focused<br />on developing software for people.
+              </p>
+              <p
+                class="text-xl md:text-5xl font-extralight text-gray-100 leading-[35px] md:leading-[70px] py-4 sm:py-6 md:py-8">
+                I love architecting software and developing<br />
+                elegant solutions to complex problems
+              </p>
+              <h4
+                class="text-[1.5rem] sm:text-[2.5rem] md:text-[4.5rem] font-extrabold text-white leading-[3rem] md:leading-[5rem] pt-8 sm:pt-12 md:pt-16">
+                A problem without a<br />solution is a poorly stated problem.</h4>
+              <p class="text-lg sm:text-xl font-light pt-4 md:pt-8 text-gray-100">
+                Albert Einstein
+              </p>
+            </div>
             <p class="text-lg sm:text-xl text-white font-light">
-              ABOUT
+              SKILLS
             </p>
             <hr class="h-1 text-white mt-2 sm:mt-6" />
-            <p class="text-xl md:text-5xl font-light text-white leading-[35px] md:leading-[70px] py-4 sm:py-8 md:py-14">
-              A Software developer & UI/UX designer focused on developing software for people.
-            </p>
-            <p class="text-[20px] md:text-[49px] font-light mt-4 md:mt-10 text-white leading-[35px] md:leading-[70px]">
-              I love architecting software and developing elegant solutions to complex problems
-            </p>
-            <hr class="my-8 md:my-20 h-1 text-white" />
-            <h4 class="text-[28px] md:text-[49px] font-bold text-white leading-[40px] md:leading-[70px]">
-              “A problem without a solution is a poorly stated
-              problem.”</h4>
             <p class="text-[16px] md:text-[20px] leading-[10px] md:leading-[20px] text-white font-light pt-4 md:pt-8">
-              <span class="mr-4">&ndash;</span>ALBERT EINSTEIN
-            </p>
-            <hr class="my-8 md:my-20 h-1 text-white" />
-            <p class="text-[16px] md:text-[20px] leading-[10px] md:leading-[20px] text-white font-light pt-4 md:pt-8">
-              EXPERIENCE
             </p>
             <ul class="py-8 md:py-18">
               <li v-for="(item, index) in experiences" :key="index" class="font-bold text-white mb-8">
