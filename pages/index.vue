@@ -8,12 +8,15 @@
       </div>
       <main class="w-full md:w-4/5 md:pl-[12rem]">
         <div class="max-h-[99vh] overflow-x-hidden  overflow-scroll px-8 pt-10 md:pt-52 w-ful md:w-10/12">
-          <h4 class="text-[20px] md:text-[49px] font-bold text-white leading-[70px]">Hello</h4>
-          <h1 class="text-[50px] md:text-[148px] font-extrabold text-white leading-[60px] md:leading-[148px]">
-            I'm<br />Abba
-            Sali</h1>
-          <div class="mt-8 md:mt-20">
-            <p class="text-[20px] md:text-[49px] font-light text-white leading-[35px] md:leading-[70px]">
+          <h1 class="text-[50px] md:text-[148px] font-bold text-white leading-[60px] md:leading-[160px]">
+            Passionate<br />Software<br />
+            engineer</h1>
+          <div class="mt-20 sm:32 md:mt-44">
+            <p class="text-lg sm:text-xl text-white font-light">
+              ABOUT
+            </p>
+            <hr class="h-1 text-white mt-2 sm:mt-6" />
+            <p class="text-xl md:text-5xl font-light text-white leading-[35px] md:leading-[70px] py-4 sm:py-8 md:py-14">
               A Software developer & UI/UX designer focused on developing software for people.
             </p>
             <p class="text-[20px] md:text-[49px] font-light mt-4 md:mt-10 text-white leading-[35px] md:leading-[70px]">
@@ -63,7 +66,8 @@
             <ul class="py-8 md:py-18">
               <div class="flex">
                 <li v-for="(item, index) in skills" :key="index" class="font-bold text-white mb-8">
-                  <img :src=item class="w-6 h-6 sm:w-12 sm:h-12 mr-4 sm:mr-6 md:mr-8 transform transition duration-500 hover:scale-125"
+                  <img :src=item
+                    class="w-6 h-6 sm:w-12 sm:h-12 mr-4 sm:mr-6 md:mr-8 transform transition duration-500 hover:scale-125"
                     alt="" />
                 </li>
               </div>
