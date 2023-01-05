@@ -12,7 +12,7 @@
             Passionate<br />Software<br />
             engineer</h1>
           <div class="mt-20 sm:32 md:mt-44">
-            <div id="site__about" class="pb-20 md:pb-44">
+            <div id="site__about" class="pb-20 md:pb-36">
               <p class="text-lg sm:text-xl text-white font-light">
                 ABOUT
               </p>
@@ -34,61 +34,49 @@
                 Albert Einstein
               </p>
             </div>
-            <p class="text-lg sm:text-xl text-white font-light">
-              SKILLS
-            </p>
-            <hr class="h-1 text-white mt-2 sm:mt-6" />
-            <p class="text-[16px] md:text-[20px] leading-[10px] md:leading-[20px] text-white font-light pt-4 md:pt-8">
-            </p>
-            <ul class="py-8 md:py-18">
-              <li v-for="(item, index) in experiences" :key="index" class="font-bold text-white mb-8">
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center">
-                  <div>
-                    <h4 class="text-[16px] md:text-[20px]">{{ item.title }}</h4>
-                    <h2 class="text-[28px] md:text-[49x]">{{ item.subTitle }}</h2>
-                  </div>
-                  <h4 class="text-[16px] text-gray-100 md:text-[20px] font-light">{{ item.year }}</h4>
-                </div>
-              </li>
-            </ul>
-            <hr class="my-8 md:my-20 h-1 text-white" />
-            <p class="text-[16px] md:text-[20px] leading-[10px] md:leading-[20px] text-white font-light pt-4 md:pt-8">
-              EDUCATION
-            </p>
-            <ul class="py-8 md:py-18">
-              <li v-for="(item, index) in educations" :key="index" class="font-bold text-white mb-8">
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center">
-                  <div>
-                    <h4 class="text-[16px] md:text-[20px]">{{ item.title }}</h4>
-                    <h2 class="text-[28px] md:text-[49x]">{{ item.subTitle }}</h2>
-                  </div>
-                  <h4 class="text-[16px] text-gray-100 md:text-[20px] font-light">{{ item.year }}</h4>
-                </div>
-              </li>
-            </ul>
-            <hr class="my-8 md:my-20 h-1 text-white" />
-            <p class="text-[16px] md:text-[20px] leading-[10px] md:leading-[20px] text-white font-light pt-4 md:pt-8">
-              SKILLS
-            </p>
-            <ul class="py-8 md:py-18">
-              <div class="flex">
-                <li v-for="(item, index) in skills" :key="index" class="font-bold text-white mb-8">
-                  <img :src=item
-                    class="w-6 h-6 sm:w-12 sm:h-12 mr-4 sm:mr-6 md:mr-8 transform transition duration-500 hover:scale-125"
-                    alt="" />
-                </li>
-              </div>
-              <h4 class="text-[16px] md:text-[20px] text-white ">
-                WORKFLOW
-              </h4>
-              <div class="site__skills__workflow flex flex-col pt-2 leading-8">
-                <div v-for="(item, index) in workflows" :key="index">
-                  <p class="text-xs md:text-lg leading-10 text-white">
-                    <span>&#10168;</span> {{ item }}
+            <div id="site__skills" class="pb-20 md:pb-36">
+              <p class="text-lg sm:text-xl text-white font-light">
+                SKILLS
+              </p>
+              <hr class="h-1 text-white mt-2 sm:mt-6" />
+              <ul class="pt-8 md:pt-20">
+                <li v-for="(item, index) in skills" :key="index" class="font-normal text-white mb-3 sm:mb-6">
+                  <p class="text-xl md:text-4xl font-extralight text-gray-100">
+                    <span class="mr-4">&mdash;</span>{{ item }}
                   </p>
-                </div>
-              </div>
-            </ul>
+                </li>
+              </ul>
+            </div>
+            <div id="site__experience" class="pb-20 md:pb-36">
+              <p class="text-lg sm:text-xl text-white font-light">
+                EXPERIENCE
+              </p>
+              <hr class="h-1 text-white mt-2 sm:mt-6" />
+              <ul class="pt-8 md:pt-20">
+                <li v-for="(item, index) in experiences" :key="index" class="font-normal text-white mb-3 sm:mb-6">
+                  <p class="text-xl md:text-4xl font-extralight text-gray-100">
+                    <span class="mr-4">&mdash;</span>{{ item }}
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div id="site__education" class="pb-20 md:pb-36">
+              <p class="text-lg sm:text-xl text-white font-light">
+                EDUCATION
+              </p>
+              <hr class="h-1 text-white mt-2 sm:mt-6" />
+              <ul class="py-8 md:py-18">
+                <li v-for="(item, index) in educations" :key="index" class="font-bold text-white mb-8">
+                  <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                    <div>
+                      <h4 class="text-[16px] md:text-[20px]">{{ item.title }}</h4>
+                      <h2 class="text-[28px] md:text-[49x]">{{ item.subTitle }}</h2>
+                    </div>
+                    <h4 class="text-[16px] text-gray-100 md:text-[20px] font-light">{{ item.year }}</h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <hr class="my-8 md:my-20 h-1 text-white" />
             <p class="text-[16px] md:text-[20px] leading-[10px] md:leading-[20px] text-white font-light pt-4 md:pt-8">
               SELECTED PROJECTS
@@ -165,56 +153,81 @@ export default {
           content: '',
         },
       ],
-      experiences: [
-        {
-          title: 'Software Developer',
-          year: 'July 2022 - PRESENT',
-          subTitle: 'DIGITRADE',
-          content:
-            'Web & Mobile Developer',
-        },
-        {
-          title: 'Mobile Developer',
-          year: 'March 2022 - July 2022',
-          subTitle: 'Lagence Digital',
-          content:
-            'Design and development of an a platform to control presence in a given place in an automatic way.',
-        },
-        {
-          title: 'Software Developer',
-          year: 'September 2021 - PRESENT',
-          subTitle: 'OSS CAMEROON',
-          content: 'Working with OSS Cameroon as a software developer ',
-          links: [
-            {
-              name: 'OSS CAMEROON - Website',
-              link: 'https://github.com/osscameroon/osscameroon-website/',
-            },
-            {
-              name: 'Onacut',
-              link: 'https://github.com/osscameroon/onacut',
-            },
-            {
-              name: 'JOBSIKA',
-              link: 'https://github.com/osscameroon/camerdevs',
-            },
-          ],
-        },
-        {
-          title: 'Mobile Developer (intern)',
-          year: 'June 2021 - November 2021',
-          subTitle: 'SAHEL VETCHI TECHNOLOGIES',
-          content:
-            'Design and development of an application business management and monitoring. ',
-        },
-        {
-          title: 'Web Developer (intern)',
-          year: 'June 2020 - September 2020',
-          subTitle: 'SOCAPRESCO',
-          content: 'Design of the showcase site of the structure. ',
-        },
-
+      skills: [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "Mongo",
+        "React.js",
+        "Flutter",
+        "Android",
+        "API Rest",
+        "Responsive Design",
+        "Docker",
+        "Git"
       ],
+      experiences: [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "Mongo",
+        "React.js",
+        "Flutter",
+        "API Rest",
+        "Responsive Design",
+        "Docker",
+        "Git"
+      ],
+      // experiences: [
+      //   {
+      //     title: 'Software Developer',
+      //     year: 'July 2022 - PRESENT',
+      //     subTitle: 'DIGITRADE',
+      //     content:
+      //       'Web & Mobile Developer',
+      //   },
+      //   {
+      //     title: 'Mobile Developer',
+      //     year: 'March 2022 - July 2022',
+      //     subTitle: 'Lagence Digital',
+      //     content:
+      //       'Design and development of an a platform to control presence in a given place in an automatic way.',
+      //   },
+      //   {
+      //     title: 'Software Developer',
+      //     year: 'September 2021 - PRESENT',
+      //     subTitle: 'OSS CAMEROON',
+      //     content: 'Working with OSS Cameroon as a software developer ',
+      //     links: [
+      //       {
+      //         name: 'OSS CAMEROON - Website',
+      //         link: 'https://github.com/osscameroon/osscameroon-website/',
+      //       },
+      //       {
+      //         name: 'Onacut',
+      //         link: 'https://github.com/osscameroon/onacut',
+      //       },
+      //       {
+      //         name: 'JOBSIKA',
+      //         link: 'https://github.com/osscameroon/camerdevs',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'Mobile Developer (intern)',
+      //     year: 'June 2021 - November 2021',
+      //     subTitle: 'SAHEL VETCHI TECHNOLOGIES',
+      //     content:
+      //       'Design and development of an application business management and monitoring. ',
+      //   },
+      //   {
+      //     title: 'Web Developer (intern)',
+      //     year: 'June 2020 - September 2020',
+      //     subTitle: 'SOCAPRESCO',
+      //     content: 'Design of the showcase site of the structure. ',
+      //   },
+
+      // ],
       projects: [
         {
           link: "https://github.com/Asam237/reservation_app",
