@@ -9,7 +9,7 @@
         </div>
         <div class="h-1/3">
             <ul>
-                <li class="text-[25px] leading-[40px] text-white font-light hover:underline"
+                <li class="text-[25px] leading-[40px] text-gray-50 font-extralight hover:underline"
                     v-for="(item, index) in navs" :key="index">
                     <a :href="item.link">{{ item.name }}</a>
                 </li>
@@ -33,24 +33,24 @@ export default {
         return {
             navs: [
                 {
-                    link: "#site__about",
+                    link: "#about",
                     name: "About"
                 },
                 {
-                    link: "#site__skills",
+                    link: "#skills",
                     name: "Skills"
                 },
                 {
-                    link: "#site__experience",
+                    link: "#experience",
                     name: "Experience"
                 },
                 {
-                    link: "#site__education",
+                    link: "#education",
                     name: "Education"
                 },
                 {
-                    link: "#site__contact",
-                    name: "Contact"
+                    link: "#projects",
+                    name: "Projects"
                 },
             ],
             links: [

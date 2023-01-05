@@ -16,14 +16,14 @@ export default {
       {
         rel: "preload prefetch",
         type: "font/ttf",
-        href: "/fonts/gibson/Gibson-Regular.ttf",
+        href: "/fonts/Inter/Inter-bold.ttf",
         as: "font",
         crossOrigin: "anonymous",
       },
       {
         rel: "preload prefetch",
         type: "font/ttf",
-        href: "/fonts/gibson/gibson-bold.ttf",
+        href: "/fonts/Inter/Inter-light.ttf",
         as: "font",
         crossOrigin: "anonymous",
       },

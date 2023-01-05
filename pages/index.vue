@@ -12,7 +12,7 @@
             Passionate<br />Software<br />
             engineer</h1>
           <div class="mt-20 sm:32 md:mt-44">
-            <div id="site__about" class="pb-20 md:pb-36">
+            <div id="about" class="pb-20 md:pb-36 md:pt-4">
               <p class="text-lg sm:text-xl text-white font-light">
                 ABOUT
               </p>
@@ -34,7 +34,7 @@
                 Albert Einstein
               </p>
             </div>
-            <div id="site__skills" class="pb-20 md:pb-36">
+            <div id="skills" class="pb-20 md:pb-36 md:pt-4">
               <p class="text-lg sm:text-xl text-white font-light">
                 SKILLS
               </p>
@@ -47,7 +47,7 @@
                 </li>
               </ul>
             </div>
-            <div id="site__experience" class="pb-20 md:pb-36">
+            <div id="experience" class="pb-20 md:pb-36 md:pt-4">
               <p class="text-lg sm:text-xl text-white font-light">
                 EXPERIENCE
               </p>
@@ -60,33 +60,36 @@
                 </li>
               </ul>
             </div>
-            <div id="site__education" class="pb-20 md:pb-36">
+            <div id="education" class="pb-20 md:pb-36 md:pt-4">
               <p class="text-lg sm:text-xl text-white font-light">
                 EDUCATION
               </p>
               <hr class="h-1 text-white mt-2 sm:mt-6" />
-              <ul class="py-8 md:py-18">
+              <ul class="pt-8 md:pt-20">
                 <li v-for="(item, index) in educations" :key="index" class="font-bold text-white mb-8">
                   <div class="flex flex-col md:flex-row md:justify-between md:items-center">
                     <div>
-                      <h4 class="text-[16px] md:text-[20px]">{{ item.title }}</h4>
-                      <h2 class="text-[28px] md:text-[49x]">{{ item.subTitle }}</h2>
+                      <h4 class="text-lg md:text-2xl">{{ item.title }}</h4>
+                      <h2 class="text-sm sm:text-lg font-light pt-2 text-gray-100">{{ item.subTitle }}</h2>
                     </div>
-                    <h4 class="text-[16px] text-gray-100 md:text-[20px] font-light">{{ item.year }}</h4>
+                    <h4 class="text-lg sm:text-xl font-light">{{ item.year }}</h4>
                   </div>
                 </li>
               </ul>
             </div>
-            <hr class="my-8 md:my-20 h-1 text-white" />
-            <p class="text-[16px] md:text-[20px] leading-[10px] md:leading-[20px] text-white font-light pt-4 md:pt-8">
-              SELECTED PROJECTS
-            </p>
-            <ul class="py-8 md:py-18">
-              <li v-for="(item, index) in   projects" :key="index"
-                class="text-[18px]  md:text-[40px] font-bold text-white leading-[36px] md:leading-[70px] hover:underline">
-                <a :href="item.link">{{ item.name }}</a>
-              </li>
-            </ul>
+            <div id="projects" class="pb-20 md:pb-36 md:pt-4">
+              <p class="text-lg sm:text-xl text-white font-light">
+                SELECTED PROJECTS
+              </p>
+              <hr class="h-1 text-white mt-2 sm:mt-6" />
+              <ul class="pt-8 md:pt-20">
+                <li v-for="(item, index) in projects" :key="index" class="font-bold text-white mb-3 md:mb-6">
+                  <a :href="item.link" class="text-xl md:text-4xl font-extralight text-gray-100 hover:underline">{{
+    item.name
+}}</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <a href="/Resume_ABBA_SALI.pdf" target="_blank"
             class="underline text-white font-medium flex justify-start md:justify-end text-xs md:text-lg pt-4 md:pt-0">
