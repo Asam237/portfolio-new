@@ -12,7 +12,7 @@
             Passionate<br />Software<br />
             engineer</h1>
           <div class="mt-20 sm:32 md:mt-44">
-            <div class="site__about pb-20 md:pb-44">
+            <div id="site__about" class="pb-20 md:pb-44">
               <p class="text-lg sm:text-xl text-white font-light">
                 ABOUT
               </p>
