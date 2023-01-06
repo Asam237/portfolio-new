@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col h-[92vh]">
         <div class="h-1/6">
-            <h4 class="font-bold text-[25px] text-white hover:underline">
+            <h4 class="font-semibold text-[25px] text-white hover:underline">
                 <a href="/">
                     Abba Sali
                 </a>
@@ -9,7 +9,7 @@
         </div>
         <div class="h-1/3">
             <ul>
-                <li class="text-[25px] leading-[40px] text-gray-50 font-extralight hover:underline"
+                <li class="text-xl leading-[40px] text-white font-light hover:underline"
                     v-for="(item, index) in navs" :key="index">
                     <a :href="item.link">{{ item.name }}</a>
                 </li>
@@ -51,6 +51,10 @@ export default {
                 {
                     link: "#projects",
                     name: "Projects"
+                },
+                {
+                    link: "#contacts",
+                    name: "Contact"
                 },
             ],
             links: [
