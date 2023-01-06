@@ -1,19 +1,19 @@
 <template>
   <div>
     <div class="flex">
-      <div class="hidden md:flex sticky top-0 w-1/5 h-screen">
+      <div class="hidden lg:flex sticky top-0 w-1/5 h-screen">
         <div class="pt-16 pl-16 w-10/12">
           <CAside />
         </div>
       </div>
-      <main class="w-full md:w-4/5 md:pl-[12rem]">
+      <main class="w-full lg:w-4/5 lg:pl-[12rem]">
         <div class="max-h-[99vh] overflow-x-hidden overflow-scroll px-8 pt-10 md:pt-52 w-full">
-          <div class="md:w-4/5">
-            <h1 class="text-[50px] md:text-[148px] font-bold text-white leading-[60px] md:leading-[160px]">
+          <div class="lg:w-4/5">
+            <h1 class="text-[50px] md:text-[100px] lg:text-[148px] font-bold text-white leading-[60px] md:leading-[100px] lg:leading-[160px]">
               Passionate<br />Software<br />
               engineer</h1>
-            <div class="mt-20 sm:32 md:mt-44">
-              <div id="about" class="pb-20 md:pb-36 md:pt-4">
+            <div class="mt-20 sm:32 lg:mt-44">
+              <div id="about" class="pb-20 lg:pb-36 md:pt-4">
                 <p class="text-lg sm:text-xl text-white font-light">
                   ABOUT
                 </p>
@@ -236,16 +236,16 @@ export default {
       // ],
       projects: [
         {
+          link: "https://github.com/osscameroon/jobsika",
+          name: "Jobsika"
+        },
+        {
           link: "https://github.com/Asam237/reservation_app",
           name: "Flutter Reservation App"
         },
         {
-          link: "https://github.com/Asam237/hendou-app",
-          name: "Heendou App"
-        },
-        {
-          link: "https://github.com/Asam237/Electronic-shop",
-          name: "Electronic Shop API"
+          link: "http://github.com/osscameroon/onacut",
+          name: "Onacut"
         },
       ]
     }

@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col h-[92vh]">
-        <div class="h-1/3">
+        <div class="h-1/6">
             <h4 class="font-bold text-[25px] text-white hover:underline">
                 <a href="/">
                     Abba Sali
@@ -15,7 +15,7 @@
                 </li>
             </ul>
         </div>
-        <div class="h-1/3">
+        <!-- <div class="h-1/3">
             <ul>
                 <li class="text-[25px] leading-[40px] text-white font-light" v-for="(item, index) in footer">
                     <p>
@@ -23,7 +23,7 @@
                     </p>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </div>
 </template>
 
